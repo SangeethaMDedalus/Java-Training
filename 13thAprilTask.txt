@@ -1,0 +1,14 @@
+--No.23
+
+123. List the emps whose Salary is same as FORD or SMITH in desc order of Salary.
+select * from emp  where sal = (select sal from emp where ename = 'FORD') or sal = (select sal from emp where ename = 'SMITH') order by sal desc
+
+ 
+
+124. List the emps whose Jobs are sale as MILLER or Sal is more than ALLEN.
+select * from emp where job = (select job from emp where ename = 'MILLER') or sal > (select sal from emp where ename = 'ALLEN')
+
+ 
+
+125. List the emps whose Sal is more than the total remuderation of the SALESMAN.
+select * from emp where sal >(select sum(sal) from emp where job='SALESMAN')
