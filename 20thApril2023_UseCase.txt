@@ -1,0 +1,5 @@
+Singleton Use Case: Configuration file has been loaded to the project only once and it has been used at consumption pages.
+
+Prototype Use Case: In a project , prototype use case used in modal file.Modal file will get invoked at once and it should be used wherever it gets consumed.
+
+Builder Use Case: The same SP is called in both UI and API. But the differece is in UI it is to do with HTML and CSS to projecting out in Display, whereas in API is to frame the responce according to the request based for the different app that consumes.
